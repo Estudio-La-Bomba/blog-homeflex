@@ -11,6 +11,7 @@ export const Container = styled.div`
     margin: 100px 0;
   }
 `;
+
 export const Content = styled.div`
   a {
     color: #95abce;
@@ -30,18 +31,30 @@ export const Content = styled.div`
       font-weight: 500;
       color: #505050;
       margin: 25px 0;
+
+      @media (max-width: 414px) {
+        font-size: 25px;
+      }
     }
 
     img {
       width: 100%;
       max-height: 350px;
       object-fit: cover;
+
+      @media (max-width: 414px) {
+        max-height: 150px;
+      }
     }
 
     > p {
       color: #505050;
       line-height: 30px;
       margin: 25px 0;
+
+      @media (max-width: 414px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -52,6 +65,10 @@ export const Content = styled.div`
     font-size: 14px;
     color: #000000;
     display: block;
+
+    @media (max-width: 414px) {
+      font-size: 12px;
+    }
 
     span {
       color: #1c65e4;

@@ -17,6 +17,20 @@ export const Posts = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 414px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
 `;
 
 export const Post = styled(Link)`
@@ -26,6 +40,14 @@ export const Post = styled(Link)`
   background: #fff;
   box-shadow: 0px 0px 30px rgba(223, 235, 255, 0.8);
 
+  @media (max-width: 414px) {
+    margin-bottom: 25px;
+  }
+
+  img {
+    width: 100%;
+  }
+
   div {
     padding: 16px;
 
@@ -34,6 +56,10 @@ export const Post = styled(Link)`
       font-weight: normal;
       line-height: 22px;
       color: #000;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
     }
 
     > p {
@@ -41,6 +67,10 @@ export const Post = styled(Link)`
       font-weight: normal;
       font-size: 14px;
       color: #95abce;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
   }
 

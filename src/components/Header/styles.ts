@@ -9,6 +9,16 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 414px) {
+    margin-bottom: 40px;
+
+    a {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+
   div {
     display: flex;
     align-items: center;
