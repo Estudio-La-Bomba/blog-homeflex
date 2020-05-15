@@ -37,9 +37,10 @@ export const Content = styled.div`
       }
     }
 
-    img {
+    > img {
       width: 100%;
       max-height: 350px;
+      object-position: center;
       object-fit: cover;
 
       @media (max-width: 414px) {
@@ -54,6 +55,27 @@ export const Content = styled.div`
 
       @media (max-width: 414px) {
         font-size: 14px;
+      }
+    }
+
+    .content {
+      p {
+        text-align: justify;
+      }
+
+      a {
+        display: inline-block;
+      }
+
+      .wp-block-media-text {
+        display: grid;
+      }
+
+      img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
       }
     }
   }

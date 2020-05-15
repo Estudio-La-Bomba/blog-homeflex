@@ -54,11 +54,10 @@ export const Post = styled(Link)`
     h2 {
       font-size: 22px;
       font-weight: normal;
-      line-height: 22px;
       color: #000;
 
       @media (max-width: 768px) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 

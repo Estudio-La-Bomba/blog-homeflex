@@ -65,7 +65,9 @@ const Post: React.FC = () => {
               alt={post.title.rendered}
             />
 
-            <p>{ReactHtmlParser(post.content.rendered)}</p>
+            <div className="content">
+              {ReactHtmlParser(post.content.rendered)}
+            </div>
           </div>
         ) : (
           <div className="loading">
@@ -76,7 +78,7 @@ const Post: React.FC = () => {
         <p className="footer">
           Pra ficar dentro de todas as novidades, continue nos acompanhando por
           aqui e pelo
-          <span>@homeflex.utilidades</span>
+          <span> @homeflex.utilidades </span>
           💙
         </p>
       </Content>
