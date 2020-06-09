@@ -35,7 +35,10 @@ const Home: React.FC = () => {
       const response = await api.get('?categories=41');
 
       setPosts(response.data);
-      setLoading(false);
+
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
     }
 
     loadPosts();

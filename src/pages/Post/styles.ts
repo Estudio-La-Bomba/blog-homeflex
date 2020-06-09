@@ -59,8 +59,18 @@ export const Content = styled.div`
     }
 
     .content {
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 20px 0;
+        color: #1c65e4;
+      }
+
       p {
         text-align: justify;
+        margin: 10px 0;
       }
 
       a {
@@ -69,6 +79,12 @@ export const Content = styled.div`
 
       .wp-block-media-text {
         display: grid;
+        margin: 35px 0;
+        align-items: center;
+
+        &__media {
+          text-align: center;
+        }
       }
 
       img {
@@ -76,6 +92,11 @@ export const Content = styled.div`
         width: 100%;
         height: auto;
         margin: 0 auto;
+      }
+
+      ul {
+        margin-left: 30px;
+        line-height: 2;
       }
     }
   }

@@ -16,6 +16,9 @@ export const Container = styled.div`
 export const Posts = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-area: auto;
+
   gap: 30px;
   width: 100%;
 
@@ -39,6 +42,7 @@ export const Post = styled(Link)`
   cursor: pointer;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(223, 235, 255, 0.8);
+  height: max-content;
 
   @media (max-width: 414px) {
     margin-bottom: 25px;
